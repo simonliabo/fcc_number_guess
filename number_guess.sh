@@ -22,7 +22,7 @@ NUMBER_GUESS() {
 
   echo "Guess the secret number between 1 and 1000:"
   read GUESS
-  if [[ $GUESS =~ ^[0-9]+$ ]]
+  if [[ $GUESS =~ ^-?[0-9]+$ ]]
   then
     if [[ $GUESS = $SNUMBER ]]
     then
